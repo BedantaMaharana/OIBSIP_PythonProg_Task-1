@@ -30,6 +30,41 @@ A Python-based voice assistant that understands voice commands and performs task
 4. Responds verbally with results or confirmations.
 5. Continues until the user says “stop” or “exit”.
 
+# Project Structure & Code Overview
+
+# `main.py`
+-> **Entry point** of the assistant.
+-> Listens to voice commands using `speech_recognition`.
+-> Converts speech to text and determines what action to take.
+-> Routes commands to appropriate functions (weather, email, search, etc.).
+-> Uses `pyttsx3` for text-to-speech responses.
+
+# `speak.py`
+--> Contains the `speak()` function that:
+  -> Uses the `pyttsx3` library to convert text into speech.
+  -> Handles assistant's voice output for all responses.
+
+# `listen.py`
+-> Contains the `take_command()` function that:
+  -> Listens via the microphone using the `speech_recognition` library.
+  -> Returns the recognized speech as text.
+  -> Handles "I didn't catch that" errors gracefully.
+
+# `tasks.py`
+--> Contains task-specific functions:
+  -> `tell_time()` – announces current time.
+  -> `tell_date()` – announces today’s date.
+  -> `get_weather(city)` – fetches weather info using OpenWeatherMap API.
+  -> `send_email(to, subject, message)` – sends email via SMTP.
+  -> `search_web(query)` – performs a web search.
+  -> `play_youtube(query)` – opens YouTube video.
+
+# `config.py`
+--> Stores sensitive configurations and API keys like:
+  -> Your **OpenWeatherMap API key**.
+  -> Your **email address and app password** (used to send emails).
+-> Not pushed to GitHub; should be added to `.gitignore`.
+
 # Usage
 
 1. Install dependencies:
