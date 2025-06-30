@@ -36,3 +36,42 @@ A Python-based voice assistant that understands voice commands and performs task
 
    ```bash
    pip install -r requirements.txt
+
+# Voice Instructions Supported
+
+You can interact with the assistant using the following voice commands:
+
+# Time & Date
+-> "What is the time?"
+-> "Tell me the time."
+-> "What time is it?"
+-> "What is today's date?"
+-> "Tell me the date."
+-> "What day is it today?"
+
+# Weather
+-> "What is the weather in [city]?"
+-> "Tell me the weather."
+-> "How is the weather today?"
+-> "Weather report for [city]."
+
+# Email
+-> "Send an email."
+-> "I want to send an email."
+-> "Email someone."
+
+# Web Search & YouTube
+-> "Search for [query]."
+-> "Look up [topic]."
+-> "Play [song name]."
+-> "Play [video] on YouTube."
+
+# Basic Conversation & Control
+-> "Hello" / "Hi"
+-> "How are you?"
+-> "Who are you?"
+-> "Stop"
+-> "Exit"
+-> "Quit"
+-> "Goodbye"
+
