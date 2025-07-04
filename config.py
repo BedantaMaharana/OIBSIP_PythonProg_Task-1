@@ -1,1 +1,6 @@
-OPENWEATHER_API_KEY = "53cd71483342e5b0177dd40856be69f4"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
